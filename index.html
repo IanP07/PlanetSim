@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Body Problem Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <div id="controls">
+            <div class="control-group">
+                <label for="body1x">Blue X Velocity: </label>
+                <input type="number" id="body1x" value="5000">
+            </div>
+            <div class="control-group">
+                <label for="body1y">Blue Y Velocity: </label>
+                <input type="number" id="body1y" value="-4000">
+            </div>
+            <div class="control-group">
+                <label for="body2x">Red X Velocity: </label>
+                <input type="number" id="body2x" value="2498">
+            </div>
+            <div class="control-group">
+                <label for="body2y">Red Y Velocity: </label>
+                <input type="number" id="body2y" value="5500">
+            </div>
+            <div class="control-group">
+                <label for="body3x">Green X Velocity: </label>
+                <input type="number" id="body3x" value="-4500">
+            </div>
+            <div class="control-group">
+                <label for="body3y">Green Y Velocity: </label>
+                <input type="number" id="body3y" value="2000">
+            </div>
+            <div id="button-group">
+                <button onclick="startSimulation()">Start Simulation</button>
+                <button onclick="stopSimulation()">Stop Simulation</button>
+            </div>
+
+            <div id="button-group">
+                <button onclick="twoBodySim()">2 Body Sim</button>
+                <button onclick="threeBodySim()">3 Body Sim</button>
+            </div>
+
+            <button onclick="clearFields()">Clear</button>
+
+        </div>
+        <div id="sketch-holder"></div>
+    </div>
+
+    <!-- Additional information below simulation -->
+    <div id="additional-content">
+        <h2>The 3 Body Problem</h2>
+        <p>
+            The three-body problem is famous for being an unsolved problem in physics and classical mechanics. It has
+            no "closed form" solution, or in other words, there is no equation that can predict where any one of the three
+            bodys will be, unlike a two body problem, like the Earth and Sun. Instead, the result is eventual chaos, and in
+            the case of this simulation, the planets fly off the edge of the screen pretty quickly.
+
+            Notice how changing the numbers even slightly greatly impacts the planets tragectories. This is primarily why the problem
+            is so difficult, it's very hard to make accurate predictions. 
+        </p>
+        <h3>
+            The default values were the values that for my testing, made the planets stay on the screen for as 
+            long as possible, see if you can beat it!
+        </h3>
+        <p>
+            2 Planet best values: 5000, 0, 300000, 0, -5000, 0
+        </p>
+        <p>
+            3 Planet best values: 5000, -4000, 2498, 5500, -4500, 2000
+        </p>
+        <img src="Images/Three-body_Problem_Animation.gif" alt="Three-body problem illustration" width="600">
+        <p>
+            * The Earth and Sun are not actually a two body problem, however the force of attraction from other celestial
+            bodies is relatively low, resulting in a fairly stable and predictable orbit. 
+
+        </p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
