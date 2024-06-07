@@ -22,7 +22,7 @@
         
 ![Three-body_Problem_Animation](https://github.com/IanP07/PlanetSim/assets/150859108/97980560-b1e8-4229-ae38-ac3f6532be13)
 
-<a href="https://3bodysim.netlify.app/" target="_blank">Try a demo here!</a>
+<a href="https://3bodysim.netlify.app/" target="_blank" rel="noopener noreferrer">Try a demo here!</a>
         
 <p>  * The Earth and Sun are not actually a two body problem, however the force of attraction from other celestial
             bodies is relatively low, resulting in a fairly stable and predictable orbit. 
