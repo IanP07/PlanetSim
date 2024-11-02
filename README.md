@@ -7,7 +7,7 @@
         </p>
         <p>
             Notice how changing the numbers even slightly greatly impacts the planets tragectories. This is primarily why the problem
-            is so difficult, it's very hard to make accurate predictions. 
+            is so difficult, it's very hard to make accurate predictions. One slight change affects the entire system, and the shift compounds as time goes on. 
         </p>
         <h3>
             The default values were the values that for my testing, made the planets stay on the screen for as 
